@@ -6,16 +6,17 @@ function login() {
     let password = document.getElementById("password").value;
     let message = document.getElementById("message");
 
+    // Check of de gebruikersnaam en het wachtwoord correct zijn
     if (username === CORRECT_USERNAME && password === CORRECT_PASSWORD) {
         message.style.color = "green";
         message.textContent = "Succesvol ingelogd!";
         
-        // Wacht 1,5 sec en stuur door naar lander.howtohack.nl
+        // Wacht 1,5 sec en stuur door naar het dashboard
         setTimeout(() => {
-            window.location.href = "https://rijndam.wixsite.com/dashboard";
-        }, 1500);
+            window.location.href = "https://rijndam.wixsite.com/dashboard"; // Doorgaan naar de URL
+        }, 1500); // 1,5 seconde wachten voor de doorverwijzing
     } else {
         message.style.color = "red";
-        message.textContent = "Onjuiste inloggegevens!";
+        message.textContent = "Onjuiste inloggegevens!"; // Foutmelding als de gegevens verkeerd zijn
     }
 }
