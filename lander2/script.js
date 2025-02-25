@@ -1,5 +1,5 @@
-const CORRECT_USERNAME = "admin";
-const CORRECT_PASSWORD = "1234";
+const CORRECT_USERNAME = "Koen";
+const CORRECT_PASSWORD = "Test";
 
 function login() {
     let username = document.getElementById("username").value;
