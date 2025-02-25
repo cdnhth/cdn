@@ -9,8 +9,10 @@ function login() {
     if (username === CORRECT_USERNAME && password === CORRECT_PASSWORD) {
         message.style.color = "green";
         message.textContent = "Succesvol ingelogd!";
+        
+        // Wacht 1,5 sec en stuur door naar lander.howtohack.nl
         setTimeout(() => {
-            window.location.href = "dashboard.html"; // Stuur door naar dashboard
+            window.location.href = "https://lander.howtohack.nl";
         }, 1500);
     } else {
         message.style.color = "red";
