@@ -13,7 +13,7 @@ function login() {
         
         // Wacht 1,5 sec en stuur door naar het dashboard
         setTimeout(() => {
-            window.location.href = "https://rijndam.wixsite.com/dashboard"; // Doorgaan naar de URL
+            window.location.href = "https://lander.howtohack.nl/"; // Doorgaan naar de URL
         }, 1500); // 1,5 seconde wachten voor de doorverwijzing
     } else {
         message.style.color = "red";
